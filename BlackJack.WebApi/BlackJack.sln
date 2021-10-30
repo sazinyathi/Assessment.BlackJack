@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlackJack.WebApi", "src\BlackJack.WebApi.csproj", "{ACEED280-736D-4DC1-94DF-1D234AED116F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{65365BEA-ED20-4055-A2E4-65B667E0C098}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{FE819381-148B-4D0C-BAB0-6A1FBD1E43CA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ACEED280-736D-4DC1-94DF-1D234AED116F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACEED280-736D-4DC1-94DF-1D234AED116F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACEED280-736D-4DC1-94DF-1D234AED116F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACEED280-736D-4DC1-94DF-1D234AED116F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{ACEED280-736D-4DC1-94DF-1D234AED116F} = {65365BEA-ED20-4055-A2E4-65B667E0C098}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A765C73A-8B69-410B-B493-805C691FD332}
+	EndGlobalSection
+EndGlobal
