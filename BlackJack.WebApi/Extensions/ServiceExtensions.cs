@@ -1,5 +1,5 @@
-﻿using BlackJack.Interfaces;
-using BlackJack.Repository;
+﻿using BlackJack.WebApi.Interface;
+using BlackJack.WebApi.Repository;
 using Microsoft.AspNetCore.Mvc.Formatters;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -20,7 +20,8 @@ namespace BlackJack
 
         public static void ConfigureTransient(this IServiceCollection services)
         {
-            services.AddTransient<ICard, CardRepository>();
+            services.AddTransient<ICardDesk, CardDeskRepository>();
+            services.AddTransient<IWinningRules, WinningRulesRepository>();
             
      
         }
