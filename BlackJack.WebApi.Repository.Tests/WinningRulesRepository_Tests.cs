@@ -29,15 +29,31 @@ namespace BlackJack.WebApi.Repository.Tests
 
 
         [TestMethod]
-        public void IsBlackJack_Success()
+        public void IsBlackJack_Player_Success()
         {
-            var player = new Hand
+            var model = new HandCustomModel 
             {
-               Name ="TWO SPADE",
-               Total = 21,
+               Dealer = new Hand { },
+               Player = new Hand { Name ="TWO DIAMOND", Total = 21, Player ="Player", NumberOfTurnsPlayed =3 }
+               
             };
             var winningRulesRepository = new WinningRulesRepository(GetConfig());
-            var result = winningRulesRepository.IsBlackJack(player,new Hand());
+            var result = winningRulesRepository.IsBlackJack(model);
+            Assert.IsInstanceOfType(result, typeof(WinningRules));
+
+        }
+
+        [TestMethod]
+        public void IsBlackJack_Dealer_Success()
+        {
+            var model = new HandCustomModel
+            {
+                Dealer = new Hand { Name = "TWO DIAMOND", Total = 21, Player = "Player", NumberOfTurnsPlayed = 3 },
+                Player = new Hand { }
+
+            };
+            var winningRulesRepository = new WinningRulesRepository(GetConfig());
+            var result = winningRulesRepository.IsBlackJack(model);
             Assert.IsInstanceOfType(result, typeof(WinningRules));
 
         }

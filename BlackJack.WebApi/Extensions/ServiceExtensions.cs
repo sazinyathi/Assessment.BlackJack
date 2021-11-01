@@ -22,6 +22,7 @@ namespace BlackJack
         {
             services.AddTransient<ICardDesk, CardDeskRepository>();
             services.AddTransient<IWinningRules, WinningRulesRepository>();
+            services.AddTransient<ICard, CardRepository>();
             
      
         }
