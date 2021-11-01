@@ -23,8 +23,8 @@ namespace BlackJack
             services.AddTransient<ICardDesk, CardDeskRepository>();
             services.AddTransient<IWinningRules, WinningRulesRepository>();
             services.AddTransient<ICard, CardRepository>();
-            
-     
+            services.AddTransient<IGame, GameRepository>();
+                
         }
 
         public static void ConfigureOutputFormatters(this IServiceCollection services)
